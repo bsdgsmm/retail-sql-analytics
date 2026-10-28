@@ -36,3 +36,5 @@ python scripts/run_queries.py sql/01_basic_queries.sql          # a single file
 | --- | --- |
 | [`01_basic_queries.sql`](sql/01_basic_queries.sql) | `SELECT`, `WHERE`, `ORDER BY`, `GROUP BY`, `HAVING`, aggregates, `CASE`, `COALESCE`, `NULLIF`, `FILTER` |
 | [`02_joins_and_aggregations.sql`](sql/02_joins_and_aggregations.sql) | `INNER JOIN`, `LEFT JOIN`, anti-joins, multi-table joins, conditional aggregation |
+| [`03_ctes_and_subqueries.sql`](sql/03_ctes_and_subqueries.sql) | CTEs, chained CTEs, scalar and correlated subqueries, `EXISTS`/`NOT EXISTS`, cohorts, recursive CTE |
+| [`04_window_functions.sql`](sql/04_window_functions.sql) | `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `NTILE`, `LAG`, running totals, moving averages, percent of total |
