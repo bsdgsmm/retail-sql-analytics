@@ -24,3 +24,15 @@ The CSV files in [`data/sample/`](data/sample) are produced by a deterministic g
 python scripts/generate_sample_data.py
 python -m pytest tests/test_data.py
 ```
+
+## Running the SQL Queries
+
+```bash
+python scripts/run_queries.py                                   # all analysis files
+python scripts/run_queries.py sql/01_basic_queries.sql          # a single file
+```
+
+| File | Concepts |
+| --- | --- |
+| [`01_basic_queries.sql`](sql/01_basic_queries.sql) | `SELECT`, `WHERE`, `ORDER BY`, `GROUP BY`, `HAVING`, aggregates, `CASE`, `COALESCE`, `NULLIF`, `FILTER` |
+| [`02_joins_and_aggregations.sql`](sql/02_joins_and_aggregations.sql) | `INNER JOIN`, `LEFT JOIN`, anti-joins, multi-table joins, conditional aggregation |
