@@ -13,3 +13,14 @@ pip install -r requirements.txt
 ```
 
 The database schema is defined in [`sql/00_schema.sql`](sql/00_schema.sql).
+
+## Sample Data
+
+> The dataset is synthetic. All customers, products, and transactions are fictional.
+
+The CSV files in [`data/sample/`](data/sample) are produced by a deterministic generator with a fixed seed (`42`):
+
+```bash
+python scripts/generate_sample_data.py
+python -m pytest tests/test_data.py
+```
